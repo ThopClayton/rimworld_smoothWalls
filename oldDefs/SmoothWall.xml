@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="ArtificialSmoothWall" ParentName="BuildingBase">
+	<defName>ArtificialSmoothWall</defName>
+    <label>smooth wall</label>
+    <description>A smooth wall, just like in the mountian fortresses back home.</description>
+    <thingClass>Building</thingClass>
+	<category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+		<li>Wall</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>	  
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+    <neverMultiSelect>true</neverMultiSelect>
+	<tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+	<selectable>true</selectable>
+    <saveCompressible>false</saveCompressible>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+	<designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+	<canOverlapZones>false</canOverlapZones>
+    <mineable>false</mineable>
+    <statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+	<costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Stony</li>
+      <li>Metallic</li>
+    </stuffCategories>
+	<repairEffect>Repair</repairEffect>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+	</damageMultipliers>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>false</isNaturalRock>
+	  <ai_chillDestination>false</ai_chillDestination>
+      <deconstructible>true</deconstructible>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+	<designationHotKey>Misc3</designationHotKey>
+  </ThingDef>  
+  
+ </Defs>
